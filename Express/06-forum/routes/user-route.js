@@ -8,11 +8,11 @@ const {
 const userRoute = require('express').Router();
 
 userRoute
-  .route('/login')
-  .post(bodyValidator(loginValidator), userController.login);
-userRoute
   .route('/register')
   .post(bodyValidator(registerValidator), userController.register);
+userRoute
+  .route('/login')
+  .post(bodyValidator(loginValidator), userController.login);
 
 // to : index (routes)
 module.exports = userRoute;

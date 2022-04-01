@@ -1,4 +1,4 @@
-const {Sequelize} = require('sequelize');
+const { Sequelize } = require('sequelize');
 
 /**
  * Représentation du model CategorySubject appartenant à la table intermédiaire

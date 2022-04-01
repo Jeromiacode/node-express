@@ -15,7 +15,7 @@ const categoryController = {
       offset: req.pagination.offset,
       limit: req.pagination.limit,
     });
-    res.status(200).json(new SuccesArrayResponse(data.rows, data.count));
+    res.json(new SuccesArrayResponse(data.rows, data.count));
   },
   getById: async (req, res) => {
     const id = parseInt(req.params.id);
@@ -23,13 +23,17 @@ const categoryController = {
       // { id: id }
       where: { id },
     });
-    if (!category) return res.status(404).json(new NotFoundErrorResponse('Category not found!'));
-    res.status(200).json(new SuccesObjectResponse(category));
+    if (!category) {
+      return res
+        .status(404)
+        .json(new NotFoundErrorResponse('Category not found!'));
+    }
+    res.json(new SuccesObjectResponse(category));
   },
   add: async (req, res) => {
     const data = req.validatedData;
     const newCategory = await db.Category.create(data);
-    res.status(200).json(new SuccesObjectResponse(newCategory));
+    res.json(new SuccesObjectResponse(newCategory));
   },
   update: async (req, res) => {
     const id = parseInt(req.params.id);

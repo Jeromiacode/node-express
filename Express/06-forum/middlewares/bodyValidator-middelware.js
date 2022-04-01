@@ -1,4 +1,6 @@
-const { InvalidFieldErrorResponse } = require('../response-schemas/error-schema');
+const {
+  InvalidFieldErrorResponse,
+} = require('../response-schemas/error-schema');
 
 const bodyValidator = (
   yupValidator,
@@ -46,7 +48,9 @@ const bodyValidator = (
         // });
         res
           .status(errorCode)
-          .json(new InvalidFieldErrorResponse('Data invalide', errors, errorCode));
+          .json(
+            new InvalidFieldErrorResponse('Data invalide', errors, errorCode)
+          );
       });
   };
 };

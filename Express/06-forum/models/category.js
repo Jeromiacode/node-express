@@ -15,7 +15,7 @@ module.exports = (sequelize) => {
         allowNull: false,
         // Ajoute la contrainte Unique
         unique: {
-          name: 'UK__Categories__Name',
+          name: 'UK_Categories__Name',
         },
       },
     },

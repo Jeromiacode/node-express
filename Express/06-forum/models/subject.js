@@ -7,18 +7,21 @@ const { DataTypes, Sequelize } = require('sequelize');
  */
 
 module.exports = (sequelize) => {
-  const Subject = sequelize.define('Subject', {
-    name: {
-      type: DataTypes.STRING(),
-      allowNull: false,
+  const Subject = sequelize.define(
+    'Subject',
+    {
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      content: {
+        type: DataTypes.STRING(1000),
+        allowNull: false,
+      },
     },
-    content: {
-      type: DataTypes.STRING(1000),
-      allowNull: false,
+    {
+      tableName: 'subject',
     }
-  },
-  {
-    tableName: 'subject',
-  });
+  );
   return Subject;
 };

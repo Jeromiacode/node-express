@@ -10,12 +10,20 @@ const categoryRoute = require('express').Router();
 categoryRoute
   .route('/')
   .get(categoryController.getAll)
-  .post(authenticateJWT(true), bodyValidator(categoryValidator), categoryController.add);
+  .post(
+    authenticateJWT({ adminRight: true }),
+    bodyValidator(categoryValidator),
+    categoryController.add
+  );
 categoryRoute
   .route('/:id([0-9]+)')
   .get(categoryController.getById)
-  .put(bodyValidator(categoryValidator), categoryController.update)
-  .delete(categoryController.delete);
+  .put(
+    authenticateJWT({ adminRight: true }),
+    bodyValidator(categoryValidator),
+    categoryController.update
+  )
+  .delete(authenticateJWT({ adminRight: true }), categoryController.delete);
 
 // to : index.js (routes)
 module.exports = categoryRoute;
