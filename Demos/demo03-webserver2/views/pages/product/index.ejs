@@ -1,0 +1,30 @@
+<%- include('../../partials/_header.ejs') %>
+
+<h1>Liste des produits !</h1>
+<p>Nombre d'element : <%= nbProducts %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Prix</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% products.forEach((product)=> { %>
+
+    <tr>
+      <td>
+        <a href="/product/<%= product.id %>"> <%= product.name %> </a>
+      </td>
+      <td>
+        <%= product.price.toLocaleString('fr-BE', {style: 'currency' , currency:
+        'EUR' }) %>
+      </td>
+    </tr>
+
+    <% }); %>
+  </tbody>
+</table>
+
+<%- include('../../partials/_footer.ejs') %>

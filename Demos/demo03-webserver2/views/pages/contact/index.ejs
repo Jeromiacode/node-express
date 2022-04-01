@@ -1,0 +1,21 @@
+<%- include('../../partials/_header.ejs') %>
+
+<h1>Contact</h1>
+<form method="POST">
+  <div>
+    <label for="name">Name :</label>
+    <input type="text" name="name" required />
+  </div>
+  <div>
+    <label for="email">Email :</label>
+    <input type="email" name="email" required />
+  </div>
+  <div>
+    <label for="message">Message :</label>
+    <textarea name="message" cols="30" rows="10" required></textarea>
+  </div>
+
+  <button type="submit">Envoyer</button>
+</form>
+
+<%- include('../../partials/_footer.ejs') %>

@@ -1,0 +1,16 @@
+{
+  "name": "mon-app",
+  "version": "1.0.0",
+  "description": "blabla",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "olivier": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "quentin",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,31 @@
+<%- include('../partials/_header.ejs') %>
+
+    <h1>New Mia ♥</h1>
+
+    <form method="post">
+        <div>
+            <label for="pseudo">Pseudo</label>
+            <input type="text" name='pseudo' id='pseudo' value='<%= data['pseudo'] %>' required>
+            <% if(errors && errors['pseudo']) { %>
+                <span class='label-error'>
+                    <%= errors['pseudo'] %>
+                </span>
+                <% } %>
+        </div>
+        <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="" rows="3">
+            <%= data['message'] %>
+        </textarea>
+            <% if(errors && errors['message']) { %>
+                <span class='label-error'>
+                    <%= errors['message'] %>
+                </span>
+                <% } %>
+        </div>
+        <div>
+            <button type="submit">Envoyer</button>
+        </div>
+    </form>
+
+    <%- include('../partials/_footer.ejs') %>

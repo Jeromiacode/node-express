@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cross-env": "^7.0.3",
+    "dotenv-flow": "^3.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "mssql": "^8.0.2",
+    "session-file-store": "^1.5.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "name": "demo-express-08-user",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js",
+    "dev": "cross-env NODE_ENV=development nodemon app.js --ignore sessions/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aurélien",
+  "license": "ISC",
+  "description": ""
+}

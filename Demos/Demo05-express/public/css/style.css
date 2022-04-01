@@ -1,0 +1,12 @@
+h1 {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 5em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  width: auto;
+  background-color: paleturquoise;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

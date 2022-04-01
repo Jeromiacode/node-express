@@ -1,0 +1,1 @@
+console.log('C\'est moi, le script client, bonjour');
