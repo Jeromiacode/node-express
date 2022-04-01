@@ -101,7 +101,11 @@ const subjectController = {
   // CATEGORIES
   addCategory: async (req, res) => {
     const id = parseInt(req.params.id);
+    const memberId = req.user.id;
     const data = req.validatedData;
+    const hasDuplicate = subject.categories
+      .map((c) => c.id)
+      .find((id) => data.categories.include(id));
 
     const subject = await db.Subject.findByPk(id);
 
@@ -111,7 +115,14 @@ const subjectController = {
         .json(new NotFoundErrorResponse('Category not found!'));
     }
 
-    subject.addCategory(data.categories);
+    if (subject.memberId !== memberId) {
+      return res.sendStatus(403);
+    }
+    if (hasDuplicate) {
+      res.status(400).json(new ErrorResponse('La cétgorie existe déjà'));
+    }
+
+    await subject.addCategory(data.categories);
 
     res.json(new SuccesObjectResponse(subject));
   },
@@ -127,7 +138,7 @@ const subjectController = {
         .json(new NotFoundErrorResponse('Category not found!'));
     }
 
-    subject.removeCategory(data.categories);
+    return subject.removeCategory(data.categories);
 
     res.json(new SuccesObjectResponse(subject));
   },
@@ -147,6 +158,8 @@ const subjectController = {
   addMessage: async (req, res) => {
     const id = parseInt(req.params.id);
     const data = req.validatedData;
+    data.memberId = req.user.id;
+
     // ↓ transaction sur un select est overkill donc on évite !
     const subject = db.Subject.findByPk(id);
     if (!subject) {
