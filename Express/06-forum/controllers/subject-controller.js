@@ -20,6 +20,7 @@ const subjectController = {
       limit,
       include: {
         model: db.Category,
+        // Permet de selectionner les infos de la table intermediaire
         through: { attributes: ['categoryId'] },
       },
     });
@@ -27,7 +28,7 @@ const subjectController = {
   },
   getOne: async (req, res) => {
     const id = parseInt(req.params.id);
-    const subject = await db.Subject.findByPK(id, {
+    const subject = await db.Subject.findByPk(id, {
       //permet d'afficher les infos de notre table
       // include: db.Category
       //permet d'afficher seulement une selection des infos ou rien si vide
@@ -102,7 +103,7 @@ const subjectController = {
     const id = parseInt(req.params.id);
     const data = req.validatedData;
 
-    const subject = await db.Subject.findByPK(id);
+    const subject = await db.Subject.findByPk(id);
 
     if (!subject) {
       return res
@@ -118,7 +119,7 @@ const subjectController = {
     const id = parseInt(req.params.id);
     const data = req.validatedData;
 
-    const subject = await db.Subject.findByPK(id);
+    const subject = await db.Subject.findByPk(id);
 
     if (!subject) {
       return res
