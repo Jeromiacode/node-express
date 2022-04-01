@@ -4,7 +4,6 @@ require('express-async-errors');
 require('dotenv-flow').config();
 
 const { PORT, NODE_ENV } = process.env;
-
 const app = express();
 
 //Middlewares
