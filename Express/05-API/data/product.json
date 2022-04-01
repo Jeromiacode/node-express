@@ -1,0 +1,28 @@
+{
+    "lastId": 3,
+    "products": [{
+        "id": 1,
+        "name": "Fraise",
+        "description": "Une fraise délicieuse",
+        "price": 4.2,
+        "origin": null,
+        "category": "fruit"
+    },
+    {
+        "id": 2,
+        "name": "Airfryer",
+        "description": "Une friteuse sans huile",
+        "price": 49.99,
+        "origin": "France",
+        "category": "Electro"
+    },
+    {
+        "id": 3,
+        "name": "Grille pain",
+        "description": null,
+        "price": 30,
+        "origin": "Belgique",
+        "category": "Electro"
+    }
+]
+}
