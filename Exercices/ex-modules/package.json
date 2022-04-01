@@ -1,0 +1,15 @@
+{
+  "name": "ex-modules",
+  "version": "1.0.0",
+  "description": "exercice sur les modules",
+  "main": "ex-module-main.js",
+  "scripts": {
+    "start": "nodemon main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JérômeDP",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

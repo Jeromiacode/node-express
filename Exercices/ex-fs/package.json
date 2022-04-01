@@ -1,0 +1,12 @@
+{
+  "name": "ex-fs",
+  "version": "0.1.0",
+  "description": "exercice sur les fichiers",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeromia",
+  "license": "ISC"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "exo02-filesystem",
+  "version": "0.1.0",
+  "description": "Correction des exo sur les file system",
+  "main": "app.js",
+  "scripts": {
+    "start": "echo \"Run command : npm run <exo0X>",
+    "exo01": "nodemon exo01/index.js",
+    "exo02": "nodemon exo02/index.js",
+    "exo03": "nodemon exo03/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Form-JS/Exo-NodeJS-02.git"
+  },
+  "author": "Aurélien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Form-JS/Exo-NodeJS-02/issues"
+  },
+  "homepage": "https://github.com/Form-JS/Exo-NodeJS-02#readme"
+}

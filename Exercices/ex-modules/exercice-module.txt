@@ -1,0 +1,26 @@
+Créer un programme node
+-----------------------
+
+- Il dit être configuré avec NPM
+- Il doit utiliser le système des modules
+
+
+> Objectif : 
+
+Réaliser une application qui permet de connaître le 
+nombre de jour avant les events suivants :
+- Le jour de Noël 
+    OK
+- Son anniversaire (communiquer par l'utilisateur)
+    OK
+- Les vacances d'été (scolaire)
+- vendredi 13
+
+boucle sur les mois de cette année à partir du mois actuel, 
+boucle sur les 4eme jours du mois a partir du jour actuel,
+! regarde tout les 
+Si jour === 13 alors vdd <- res
+
+> Remarques :
+Si nous sommes dans cette période des vacances => 
+Lui indiqué que l'event est en cours

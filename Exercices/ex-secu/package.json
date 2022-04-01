@@ -1,0 +1,12 @@
+{
+  "name": "ex-secu",
+  "version": "0.1.0",
+  "description": "Exercices sur un échnage de clés cryptées",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeromia",
+  "license": "ISC"
+}

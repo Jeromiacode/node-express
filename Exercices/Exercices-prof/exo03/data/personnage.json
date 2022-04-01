@@ -1,0 +1,60 @@
+{
+    "groupe": "personnage",
+    "membre": [
+        {
+            "groupe": "ducks",
+            "membre": [
+                { "prenom" : "Donald", "nom": "Duck" },
+                { "prenom" : "Daisy", "nom": "Duck" },
+                { "prenom" : "Della", "nom": "Duck" },
+                {
+                    "groupe": "enfant",
+                    "membre": [
+                        { "prenom" : "Riri", "nom": "Duck" },
+                        { "prenom" : "Fifi", "nom": "Duck" },
+                        { "prenom" : "Loulou", "nom": "Duck" }
+                    ]
+                }
+            ]
+        },
+        {
+            "groupe": "picsou",
+            "membre": [
+                { "prenom" : "Balthazar", "nom": "Picsou" },
+                {
+                    "groupe": "enfant",
+                    "membre": [
+                        { "prenom" : "Zaza", "nom": "Vanderquack" }
+                    ]
+                },
+                { "prenom" : "Matilda", "nom": "Picsou" },
+                { "prenom" : "Hortense", "nom": "Picsou" },
+                { "prenom" : "Gédéon", "nom": "Picsou" },
+                { "prenom" : "Léon", "nom": "Sanzun" },
+                {
+                    "groupe": "allié",
+                    "membre": [
+                        { "prenom" : "Géo", "nom": "Trouvetou" },
+                        { "prenom" : "Flagada", "nom": "Jones" }
+                    ]
+                },
+                {
+                    "groupe": "enemie",
+                    "membre": [
+                        { "prenom" : "Miss", "nom": "Tick" },
+                        {
+                            "groupe": "Les Rapetou",
+                            "membre": [
+                                { "prenom" : "La Science ", "nom": "Rapetou" },
+                                { "prenom" : "La Gonflette", "nom": "Rapetou" },
+                                { "prenom" : "Burger", "nom": "Rapetou" },
+                                { "prenom" : "Poischiche", "nom": "Rapetou" }
+                            ]
+                        },
+                        { "prenom" : "Archibald", "nom": "Gripsou" }
+                    ]
+                }
+            ]
+        }
+    ]
+}  

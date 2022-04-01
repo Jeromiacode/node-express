@@ -1,0 +1,85 @@
+{
+    "nbPersonnage": 20,
+    "personnages": [
+        {
+            "prenom": "Donald",
+            "nom": "Duck"
+        },
+        {
+            "prenom": "Daisy",
+            "nom": "Duck"
+        },
+        {
+            "prenom": "Della",
+            "nom": "Duck"
+        },
+        {
+            "prenom": "Riri",
+            "nom": "Duck"
+        },
+        {
+            "prenom": "Fifi",
+            "nom": "Duck"
+        },
+        {
+            "prenom": "Loulou",
+            "nom": "Duck"
+        },
+        {
+            "prenom": "Balthazar",
+            "nom": "Picsou"
+        },
+        {
+            "prenom": "Zaza",
+            "nom": "Vanderquack"
+        },
+        {
+            "prenom": "Matilda",
+            "nom": "Picsou"
+        },
+        {
+            "prenom": "Hortense",
+            "nom": "Picsou"
+        },
+        {
+            "prenom": "Gédéon",
+            "nom": "Picsou"
+        },
+        {
+            "prenom": "Léon",
+            "nom": "Sanzun"
+        },
+        {
+            "prenom": "Géo",
+            "nom": "Trouvetou"
+        },
+        {
+            "prenom": "Flagada",
+            "nom": "Jones"
+        },
+        {
+            "prenom": "Miss",
+            "nom": "Tick"
+        },
+        {
+            "prenom": "La Science ",
+            "nom": "Rapetou"
+        },
+        {
+            "prenom": "La Gonflette",
+            "nom": "Rapetou"
+        },
+        {
+            "prenom": "Burger",
+            "nom": "Rapetou"
+        },
+        {
+            "prenom": "Poischiche",
+            "nom": "Rapetou"
+        },
+        {
+            "prenom": "Archibald",
+            "nom": "Gripsou"
+        }
+    ]
+}

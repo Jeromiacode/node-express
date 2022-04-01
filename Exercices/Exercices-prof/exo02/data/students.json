@@ -1,0 +1,86 @@
+{
+	"center": "JS & Co",
+	"results": [
+		{
+			"section": {
+				"code": 1010,
+				"name": "Dev",
+				"description" : "Formation de developpeur informatique"
+			},
+			"professor" : {
+				"firstname": "Donald",
+				"lastname": "Duck"
+			},
+			"students": [
+				{ 
+					"firstname": "Riri",
+					"lastname": "Duck",
+					"year_result": 17
+				},
+				{ 
+					"firstname": "Fifi",
+					"lastname": "Duck",
+					"year_result": 13
+				},
+				{ 
+					"firstname": "Loulou",
+					"lastname": "Duck",
+					"year_result": 5
+				}
+			]
+		},
+		{
+			"section": {
+				"code": 1310,
+				"name": "Economique",
+				"description" : "Objectif... Avoir de l'argent !"
+			},
+			"professor" : {
+				"firstname": "Balthazar",
+				"lastname": "Picsou"
+			},
+			"students": [
+				{ 
+					"firstname": "Gontran",
+					"lastname": "Bonheur",
+					"year_result": 16
+				},
+				{ 
+					"firstname": "Zaza",
+					"lastname": "Vanderquack",
+					"year_result": 19
+				}
+			]
+		},
+		{
+			"section": {
+				"code": 1111,
+				"name": "Commerce",
+				"description" : "Vendre tout à n'importe qui"
+			},
+			"professor" : {
+				"firstname": "Archibald",
+				"lastname": "Gripsou"
+			},
+			"students": [
+				{ 
+					"firstname": "Crésus",
+					"lastname": "Flairsou",
+					"year_result": 20
+				},
+				{ 
+					"firstname": "Arpène",
+					"lastname": "Lucien",
+					"year_result": null
+				},
+				{ 
+					"firstname": "Géo",
+					"lastname": "Trouvetou",
+					"year_result": 11
+				}
+			]
+		}
+	 ]
+
+
+}
