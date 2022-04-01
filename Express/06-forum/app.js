@@ -7,6 +7,7 @@ const { PORT, NODE_ENV } = process.env;
 const app = express();
 
 //Middlewares
+// Pour nos requetes POST
 app.use(express.json());
 app.use(pagination(/* {defaultLimit : 2} */));
 

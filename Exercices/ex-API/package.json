@@ -1,0 +1,22 @@
+{
+  "name": "ex-api",
+  "version": "0.1.0",
+  "description": "Récap de la création d'une API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "I",
+    "am",
+    "the",
+    "king"
+  ],
+  "author": "Jeromia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
