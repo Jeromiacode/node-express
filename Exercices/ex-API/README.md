@@ -1,6 +1,5 @@
-Feuille de route d'une API
+Swagger
 **************************
 
-- Créer le fichier app.js
-- Initialiser le projet (npm init)
-
+- 
+- express-jsdoc-swagger
