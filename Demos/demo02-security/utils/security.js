@@ -1,6 +1,4 @@
-const { rejects } = require('assert');
 const crypto = require('crypto');
-const { resolve } = require('path');
 
 // 1 octet ou byte = 8 bits (2exp8) : 256 possibilités
 // #FF0000 = rgb(255,0,0)
@@ -18,7 +16,7 @@ exports.hash = (data, salt) => {
 };
 
 exports.generateKeys = () => {
-  return new Promise((resolve, rejects) => {
+  return new Promise((resolve, reject) => {
     crypto.generateKeyPair(
       'rsa',
       {
